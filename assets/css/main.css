@@ -394,7 +394,6 @@ pre code {
 
 @media screen and (max-width: 980px) {
     .container {
-        max-width: 100% !important;
         width: 100% !important;
     }
 }
@@ -4491,7 +4490,6 @@ body.is-preload .banner:after {
 
 #wapno1 img {
     max-height: 600px;
-    width: 100%;
     height: auto;
 }
 
@@ -4505,7 +4503,6 @@ body.is-preload .banner:after {
 
 #wapno2 img {
     max-height: 600px;
-    width: 100%;
     height: auto;
 }
 
@@ -4593,4 +4590,136 @@ body.is-preload .banner:after {
 iframe {
     width: 100%;
     height: 500px;
+}
+
+.overlay h1 {
+    color: #2e3842;
+}
+
+.overlay p {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 !important;
+}
+
+.download {
+    background: #ffffff;
+    border: solid 1px #e6e6e6;
+    border-radius: 2px;
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.download span {
+    background: #f2594b;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 5px 10px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.download span:last-child {
+    margin-left: -20px;
+}
+
+.download:before,
+.download:after {
+    background: #ffffff;
+    border: solid 3px #9fb4cc;
+    border-radius: 4px;
+    content: '';
+    display: block;
+    height: 35px;
+    left: 50%;
+    margin: -17px 0 0 -12px;
+    position: absolute;
+    top: 50%;
+    /*transform:translate(-50%,-50%);*/
+    width: 25px;
+}
+
+.download:hover:before,
+.download:hover:after {
+    background: #e2e8f0;
+}
+
+
+/*a:before{transform:translate(-30%,-60%);}*/
+
+.download:before {
+    margin: -23px 0 0 -5px;
+}
+
+.download:hover {
+    background: #e2e8f0;
+    border-color: #9fb4cc;
+}
+
+.download:active {
+    background: #dae0e8;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+.download span:first-child {
+    display: none;
+}
+
+.download:hover span:first-child {
+    display: inline-block;
+}
+
+.download:hover span:last-child {
+    display: none;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
 }
