@@ -4476,9 +4476,26 @@ body.is-preload .banner:after {
     background-color: #fff;
 }
 
-#wapno1 img {
-    max-height: 600px;
-    height: auto;
+@media screen and (max-width: 576px) {
+    #wapno1 img {
+        max-height: 400px;
+        height: auto;
+    }
+    #wapno2 img {
+        max-height: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    #wapno1 img {
+        max-height: 600px;
+        height: auto;
+    }
+    #wapno2 img {
+        max-height: 600px;
+        height: auto;
+    }
 }
 
 #wapno1 h2 {
@@ -4487,11 +4504,6 @@ body.is-preload .banner:after {
 
 #wapno2 {
     background-color: #fff;
-}
-
-#wapno2 img {
-    max-height: 600px;
-    height: auto;
 }
 
 #wapno2 h2 {
